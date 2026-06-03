@@ -3,7 +3,7 @@ __pycache__/
 *.pyc
 .env
 chroma_db/
-*.pdf
+# *.pdf
 .DS_Store
 *.egg-info/
 dist/
