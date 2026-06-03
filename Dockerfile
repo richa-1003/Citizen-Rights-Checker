@@ -10,10 +10,10 @@ RUN apt-get update && apt-get install -y \
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Copy all project files including the PDF
 COPY . .
 
-# Download PDF and build ChromaDB at Docker build time
-RUN python download_data.py
+# Build ChromaDB from the PDF that's already in the repo
 RUN python build_kb.py
 
 EXPOSE 7860
