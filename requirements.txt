@@ -31,3 +31,4 @@ streamlit==1.38.0
 python-dotenv==1.0.1
 pydantic==2.9.2
 tqdm==4.66.5
+httpx==0.27.0
